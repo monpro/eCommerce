@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
@@ -16,7 +17,7 @@
 function checkEmpty(id, name){
 	var value = $("#"+id).val();
 	if(value.length==0){
-		alert(name+ "不能为空");
+		alert(name+ "should not be empty");
 		$("#"+id)[0].focus();
 		return false;
 	}
@@ -25,12 +26,12 @@ function checkEmpty(id, name){
 function checkNumber(id, name){
 	var value = $("#"+id).val();
 	if(value.length==0){
-		alert(name+ "不能为空");
+		alert(name+ "should not be empty");
 		$("#"+id)[0].focus();
 		return false;
 	}
 	if(isNaN(value)){
-		alert(name+ "必须是数字");
+		alert(name+ "must be numbers");
 		$("#"+id)[0].focus();
 		return false;
 	}
@@ -40,12 +41,12 @@ function checkNumber(id, name){
 function checkInt(id, name){
 	var value = $("#"+id).val();
 	if(value.length==0){
-		alert(name+ "不能为空");
+		alert(name+ "should not be empty");
 		$("#"+id)[0].focus();
 		return false;
 	}
 	if(parseInt(value)!=value){
-		alert(name+ "必须是整数");
+		alert(name+ "must be numbers");
 		$("#"+id)[0].focus();
 		return false;
 	}
@@ -59,7 +60,7 @@ $(function(){
 		var deleteLink = $(this).attr("deleteLink");
 		console.log(deleteLink);
 		if("true"==deleteLink){
-			var confirmDelete = confirm("确认要删除");
+			var confirmDelete = confirm("confirmed to delete?");
 			if(confirmDelete)
 				return true;
 			return false;

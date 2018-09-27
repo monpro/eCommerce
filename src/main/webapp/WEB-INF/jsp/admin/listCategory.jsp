@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: DELL
-  Date: 2018/9/25
-  Time: 10:41
-  To change this template use File | Settings | File Templates.
---%>
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" import="java.util.*"%>
 
@@ -29,7 +24,7 @@
 <title>分类管理</title>
 
 <div class="workingArea">
-    <h1 class="label label-info" >Category Management</h1>
+    <h1 class="label label-info" >分类管理</h1>
     <br>
     <br>
 
@@ -38,12 +33,12 @@
             <thead>
             <tr class="success">
                 <th>ID</th>
-                <th>Image</th>
-                <th>Category Name</th>
-                <th>Property Management</th>
-                <th>Product Management</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>图片</th>
+                <th>分类名称</th>
+                <th>属性管理</th>
+                <th>产品管理</th>
+                <th>编辑</th>
+                <th>删除</th>
             </tr>
             </thead>
             <tbody>
@@ -70,23 +65,23 @@
     </div>
 
     <div class="panel panel-warning addDiv">
-        <div class="panel-heading">Add New Category</div>
+        <div class="panel-heading">新增分类</div>
         <div class="panel-body">
             <form method="post" id="addForm" action="admin_category_add" enctype="multipart/form-data">
                 <table class="addTable">
                     <tr>
-                        <td>Category name</td>
+                        <td>分类名称</td>
                         <td><input  id="name" name="name" type="text" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>Category image</td>
+                        <td>分类圖片</td>
                         <td>
-                            <input id="categoryPic" accept="image/*" type="file" name="image" value="Choose File"/>
+                            <input id="categoryPic" accept="image/*" type="file" name="image" />
                         </td>
                     </tr>
                     <tr class="submitTR">
                         <td colspan="2" align="center">
-                            <button type="submit" class="btn btn-success">SUBMIT</button>
+                            <button type="submit" class="btn btn-success">提 交</button>
                         </td>
                     </tr>
                 </table>
