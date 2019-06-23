@@ -3,3 +3,8 @@
 #### the frontend is using jquery and bootstrap. Maybe refactor it using react + redux in the future.
 
 #### the backend is using spring + springmvc + mybatis + mysql. It could handle high concurrency and remain efficiency at same time
+
+
+
+
+TODO: use spring boot and vuejs to refactor the frontend and backend
